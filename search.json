@@ -19,9 +19,9 @@
             "type": "text"
         },
         {
-            "def": 5,
-            "max": 40,
-            "min": 5,
+            "def": 1,
+            "max": 26,
+            "min": 1,
             "name": "#RATING_MINIMUM",
             "query": "minRating",
             "step": 1,
@@ -29,9 +29,9 @@
             "unit": ""
         },
         {
-            "def": 40,
-            "max": 40,
-            "min": 5,
+            "def": 26,
+            "max": 26,
+            "min": 1,
             "name": "#RATING_MAXIMUM",
             "query": "maxRating",
             "step": 1,
