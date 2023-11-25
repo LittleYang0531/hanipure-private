@@ -1,5 +1,5 @@
 {
-    "config.dataUrlPrefix": "https://oneindex.littleyang.me/api/raw?path=/data/",
+    "config.dataUrlPrefix": "https://stellarity.littleyang.me/data/",
     "info.title": "Honeyworks Premium Live",
     "info.bannerHash": "0273968035abcd9bfe8f6b8fa913bb356dd202f2",
     "list.pageNumber": 20
