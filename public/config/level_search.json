@@ -1,0 +1,60 @@
+[    
+    {
+        "title": "#ADVANCED",
+        "icon": "search",
+        "type": "advanced",
+        "options": [
+            {
+                "query": "keywords",
+                "name": "#KEYWORDS",
+                "type": "text",
+                "placeholder": "#KEYWORDS_PLACEHOLDER"
+            },
+            {
+                "query": "artist",
+                "name": "#ARTISTS",
+                "type": "text",
+                "placeholder": "#ARTISTS_PLACEHOLDER"
+            },
+            {
+                "query": "author",
+                "name": "#AUTHOR",
+                "type": "text",
+                "placeholder": "#AUTHOR_PLACEHOLDER"
+            },
+	        {
+	        	"name": "#DIFFICULTY",
+	        	"query": "difficulty",
+	        	"type": "select",
+	        	"def": 0,
+	        	"values": [ "All", "Easy", "Normal", "Hard", "Expert" ]
+	        },
+            {
+                "query": "minRating",
+                "name": "#RATING_MINIMUM",
+                "type": "slider",
+                "def": 1,
+                "min": 1,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "query": "maxRating",
+                "name": "#RATING_MAXIMUM",
+                "type": "slider",
+                "def": 30,
+                "min": 1,
+                "max": 30,
+                "step": 1
+            },
+            {
+                "query": "random",
+                "name": "#RANDOM",
+                "type": "toggle",
+                "def": 0
+            }
+        ],
+        "filter": "title LIKE \"%{{keywords}}%\" AND artists LIKE \"%{{artist}}%\" AND author LIKE \"%{{author}}%\" AND name LIKE (CASE \"{{difficulty}}\" WHEN \"All\" THEN \"%\" ELSE \"%{{difficulty}}%\" END) AND rating >= {{minRating}} AND rating <= {{maxRating}}",
+        "order": "CASE {{random}} WHEN 0 THEN id WHEN 1 THEN RANDOM() END ASC"
+    }
+]

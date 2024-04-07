@@ -1,0 +1,13 @@
+{
+    "server.name": "Sonolus",
+    "server.title": "Honeyworks Premium Live",
+    "server.description": "Play Honeyworks Premium Live in Sonolus!",
+    "server.hasAuthentication": false,
+    "server.hasMultiplayer": false,
+    "server.logo": "9d364cdf72de5709f16eae90e1be7f023946f007",
+    "server.banner": "0273968035abcd9bfe8f6b8fa913bb356dd202f2",
+    "server.rootUrl": "hwpl.server.littleyang.me",
+    "server.data.prefix": "https://stellarity.littleyang.me/data/",
+    "server.multiplayer.address": "wss://stellarity.littleyang.me",
+    "language.default": "zhs"
+}
